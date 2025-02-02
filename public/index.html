@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cygnus Ater - Backend Console</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script> <!-- Ensures script runs after the DOM loads -->
+</head>
+<body>
+    <header>
+        <h1>Cygnus Ater Backend Console</h1>
+    </header>
+
+    <main>
+        <section id="news-container">
+            <h2>News List</h2>
+            <ul id="news-list"></ul>
+        </section>
+
+        <section id="news-form">
+            <h2>Add News</h2>
+            <form id="newsForm">
+                <label for="news-title">Title:</label>
+                <input type="text" id="news-title" placeholder="Enter news title" required>
+
+                <label for="news-body">Body:</label>
+                <textarea id="news-body" placeholder="Enter news details" rows="4" required></textarea>
+
+                <button type="submit">Add</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
